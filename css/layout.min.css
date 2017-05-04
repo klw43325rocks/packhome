@@ -334,6 +334,14 @@ h3, h4 {
         opacity: .8;
     }
 
+.promo-banner2 {
+    position: relative;
+    z-index: 1;
+    background: url(../img/packanack051.jpg) center center no-repeat fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
 .service:hover .service-element, .work .work-popup-overlay {
     opacity: 0;
     transition-property: all;
