@@ -158,7 +158,7 @@ h3, h4 {
         content: '“';
     }
 
-.header .nav-item-hover:after, .pricing .pricing-list-item:before, .promo-banner:before, .promo-banner2:before, .promo-block:before, .work .work-overlay:before {
+.header .nav-item-hover:after, .pricing .pricing-list-item:before, .promo-banner:before, .promo-banner2:before, promo-banner3:before, .promo-block:before, .work .work-overlay:before {
     content: " ";
 }
 
@@ -302,7 +302,7 @@ h3, h4 {
         margin-right: 10px;
     }
 
-.promo-banner:before, .promo-block:before, .promo-banner2:before, .work .work-overlay:before, .work .work-popup-overlay {
+.promo-banner:before, .promo-block:before, .promo-banner2:before,  .promo-banner3:before, .work .work-overlay:before, .work .work-popup-overlay {
     top: 0;
     width: 100%;
     height: 100%;
@@ -354,6 +354,31 @@ h3, h4 {
     }
 
     .promo-banner2 .promo-banner2-text {
+        font-size: 20px;
+        color: #fff;
+        opacity: .8;
+    }
+
+.promo-banner3 {
+    position: relative;
+    z-index: 1;
+    background: url(../img/packanackl.jpg) center center no-repeat fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.promo-banner3:before {
+        position: absolute;
+        z-index: -1;
+        background: rgba(81,87,105,.4);
+    }
+
+   .promo-banner3 .promo-banner3-title {
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .promo-banner3 .promo-banner3-text {
         font-size: 20px;
         color: #fff;
         opacity: .8;
