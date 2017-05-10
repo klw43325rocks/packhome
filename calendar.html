@@ -6,20 +6,28 @@
 <html lang="en-US"> <!--<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Calendar</title>
+    <!--<meta charset="utf-8" />-->
+    <title>Packanack Lake</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
 
-    <!-- Mobile
-      ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Favicon-->
-	<link rel="shortcut icon" href="">
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-    <!--[if IE]>
-        <link href="http://packanacklake.com/wp-content/themes/potassium/css/ie.css" rel='stylesheet' type='text/css'>
-    <![endif]-->
+     <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+    <!-- THEME STYLES -->
+    <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/packlogo2.png" />
 
 	
        
@@ -48,23 +56,9 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='contact-form-7-css'  href='http://packanacklake.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.7' type='text/css' media='all' />
-<link rel='stylesheet' id='symple_shortcode_styles-css'  href='http://packanacklake.com/wp-content/plugins/symple-shortcodes/includes/css/symple_shortcodes_styles.css?ver=4.7.4' type='text/css' media='all' />
-<link rel='stylesheet' id='base-css'  href='http://packanacklake.com/wp-content/themes/potassium/css/base.css?ver=1.2' type='text/css' media='all' />
-<link rel='stylesheet' id='normalize-css'  href='http://packanacklake.com/wp-content/themes/potassium/css/normalize.css?ver=1.2' type='text/css' media='all' />
-<link rel='stylesheet' id='skeleton-css'  href='http://packanacklake.com/wp-content/themes/potassium/css/skeleton.css?ver=1.2' type='text/css' media='all' />
-<link rel='stylesheet' id='flexslider-css'  href='http://packanacklake.com/wp-content/themes/potassium/css/flexslider.css?ver=2.0' type='text/css' media='all' />
+
 <link rel='stylesheet' id='source-sans-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C300%2C600%2C400italic%2C600italic%2C700italic%2C700&#038;ver=4.7.4' type='text/css' media='all' />
 <link rel='stylesheet' id='pt-sans-css'  href='http://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700&#038;ver=4.7.4' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='http://packanacklake.com/wp-content/themes/potassium/style.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='component-css'  href='http://packanacklake.com/wp-content/themes/potassium/css/component.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='responsive-nav-css'  href='http://packanacklake.com/wp-content/themes/potassium/css/responsive-nav.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='styles-nav-css'  href='http://packanacklake.com/wp-content/themes/potassium/css/styles-nav.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='jetpack_css-css'  href='http://packanacklake.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.7.1' type='text/css' media='all' />
-<script type='text/javascript' src='http://packanacklake.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/themes/potassium/js/responsive-nav.js?ver=1.0'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/themes/potassium/js/modernizr.custom.js?ver=4.7.4'></script>
 <link rel='https://api.w.org/' href='http://packanacklake.com/?rest_route=/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://packanacklake.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://packanacklake.com/wp-includes/wlwmanifest.xml" /> 
@@ -227,31 +221,60 @@ ul.navigation li a {
 </div>             </div>
     </div>
 </div>
-   <div id="footer">
-        <div class="container">
-            <div class="sixteen columns">
-                <div class="copyright">
-                    <p><img src="" alt=""/></p>
-                    <p class="copy-txt"><a href="mailto:communications@packanacklake.com?subject=Please add me to the mailing list" > Click Here to join our mailing list.</a></p>
+   <footer class="footer">
+         <div class="section-seperator">
+	   </div>
+            <div class="content container">
+            <div class="row">
+                <div class="col-xs-6"></div>
+		<div class="col-xs-6 text-center">
+                    <p class="margin-b-0"><a class="logo-wrap" href="mailto:communications@packanacklake.com?subject=Please%20add%20me%20to%20the%20mailing%20list">Click Here To Join Our Mailing List</a></p>
                 </div>
-            </div>  
-        </div>
-    </div>      
+                    <!--<p class="copy-txt"><a href="mailto:communications@packanacklake.com?subject=Please add me to the mailing list" > Click Here to join our mailing list.</a></p>-->
+		     <div class="col-xs-6 text-center">
+                    <p class="margin-b-0"><a class="logo-wrap" href="#body">Copywrite Packanack Lake Association 2017</a></p>
+                </div>
+             </div>
+	   </div>
+	</footer>
+              
           
 <!-- JS init footer -->
 <!-- End Document
 ================================================== -->
- 
-  	<div style="display:none">
-	</div>
-<script type='text/javascript' src='http://packanacklake.com/wp-includes/js/comment-reply.min.js?ver=4.7.4'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+
+<!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+    <!-- CORE PLUGINS -->
+    <script src="vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="vendor/jquery.easing.js" type="text/javascript"></script>
+    <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script src="js/layout.min.js" type="text/javascript"></script>
+    <script src="js/components/wow.min.js" type="text/javascript"></script>
+    <script src="js/components/swiper.min.js" type="text/javascript"></script>
+    <script src="js/components/maginific-popup.min.js" type="text/javascript"></script>
+    <script src="js/components/masonry.min.js" type="text/javascript"></script>
+	
+	
 <script type='text/javascript'>
 /* <![CDATA[ */
 var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.7'></script>
 <script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201719'></script>
 <script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Mayaa'></script>
 <script type='text/javascript'>
@@ -259,11 +282,6 @@ var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a
 var WPGroHo = {"my_hash":""};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.7.4'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/themes/potassium/js/jquery.smooth-scroll.js?ver=1.0'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/themes/potassium/js/grid.js?ver=1.0'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-content/themes/potassium/js/init-footer.js?ver=1.0'></script>
-<script type='text/javascript' src='http://packanacklake.com/wp-includes/js/wp-embed.min.js?ver=4.7.4'></script>
 <script type='text/javascript' src='https://stats.wp.com/e-201719.js' async defer></script>
 <script type='text/javascript'>
 	_stq = window._stq || [];
